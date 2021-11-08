@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var p1 = {
+            name: 'Peter',
+            saying: function() {
+                console.log('I am saying');
+            }
+        };
+
+        var p2 = {
+            name: 'Peter',
+            saying: ()=>{
+                console.log('I am saying');
+            }
+        };
+
+        var p3 = {
+            name: 'Peter',
+            saying() {
+                console.log('I am saying');
+            }
+        };
+
+        p1.saying();
+        p2.saying();
+        p3.saying();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

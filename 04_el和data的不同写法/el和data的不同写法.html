@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/icon/motor.ico" type="image/x-icon"/>
+    <script src="../js/vue.js"></script>
+    <title>el和data不同写法</title>
+</head>
+<body>
+    <div id="demo">
+        <h1>{{message}}</h1>
+    </div>
+    <script>
+        const a = new Vue({
+            el: '#demo',
+            //data的第一种写法，对象式写法
+            // data: {
+            //     message: 'how are you'
+            // }
+            //data的第二种写法，函数式写法
+            // data: function() {
+            //     return {
+            //         message: 'how are you'
+            //     }
+            // }
+            //ES6中函数式的新写法
+            data() {
+                return {
+                    message: 'how are you'
+                }
+            }
+        });
+    </script>
+</body>
+</html>
