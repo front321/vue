@@ -8,15 +8,19 @@
 </head>
 <body>
     <script>
-        let student = {
-            name: 'Peter',
-            sex:'男'
+        let per = {
+            "name":"Peter"
         }
-        Object.defineProperty(student, 'age', {
-            value: 42,
-            enumerable: true
+
+        console.log(per);
+
+        Object.defineProperty(per, "age", {
+            value: 80,
+            enumerable:false
         });
-        console.log(Object.keys(student));
+
+console.log(Object.keys(per));
+        console.log(per);
     </script>
     
 </body>
