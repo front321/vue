@@ -5,7 +5,7 @@
 <body>
     <!--
         事件的基本使用：
-        1、使用v-on:xxx活@xxx绑定事件，其中xxx是事件名；
+        1、使用v-on:xxx或@xxx绑定事件，其中xxx是事件名；
         2、事件的回调需要配置在methods对象中，最终会在vm上；
         3、methods中配置的函数，不需要箭头函数！否则this就不是vm了；
         4、methods中配置的函数，都是被Vue所管理的函数，this的指向是vm或组件实例对象；
@@ -16,7 +16,7 @@
     -->
     <div id="demo">
         <p>{{msg}}</p>
-        <!-- <button v-on:click="showInfo">click here</button> -->
+        <!-- <button v-on:click="showInfo1">click here</button> -->
         <button @click="showInfo1">click here（不传参）</button>
         <button @click="showInfo2(11, $event)">click here（传参）</button>
     </div>
